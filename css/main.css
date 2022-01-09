@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8rem;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.header{
+    margin-bottom: 4rem;
+}
+
+.header__title{
+    text-transform: uppercase;
+    color: #222;
+}
+
+.form{
+    background-color: #FFF;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form__input{
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    outline: none;
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.form__btn{
+    padding: 1.5rem 2rem;
+    background-color: teal;
+    color: #fff;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    min-width: 8.8rem
+}
+
+.form__btn:hover{
+    background-color: rgb(24, 158, 158);
+}
+
+.form__btn:active{
+    transform: scale(0.95);
+}
+
+/* Tasks */
+.tasks{
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 335px;
+}
+
+.tasks__item{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.tasks__item:hover .tasks__trash{
+    display: flex;
+}
+.tasks__item:hover .tasks__edit{
+    display: flex;
+}
+
+.tasks__item.complete .tasks__radio{
+    color: green;
+}
+
+.tasks__item.complete .tasks__title{
+    color: #777;
+    text-decoration: line-through;
+}
+
+.tasks__radio{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.tasks__radio:active{
+    transform: scale(0.9);
+}
+
+.tasks__title{
+    flex-grow: 1;
+}
+
+.tasks__item:last-child{
+    box-shadow: none;
+}
+
+.btn-icon{
+    border: none;
+    background: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    align-self: flex-start;
+    padding-right: 0;
+}
+
+.tasks__edit{
+    display: none;
+}
+.tasks__edit:hover{
+    color: teal;
+}
+.tasks__edit:active{
+    transform: scale(0.9);
+}
+.tasks__trash{
+    display: none;
+}
+
+.tasks__trash:hover{
+    color: red;
+}
+
+.tasks__trash:active{
+    transform: scale(0.9);
+}
